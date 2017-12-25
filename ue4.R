@@ -149,6 +149,7 @@ summary(aov(data$dv~data$iv))
 # Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 DunnettTest(dv~iv)
+# Kontrollgruppe setzen mit option control = 
 
 # Dunnett's test for comparing several treatments with a control :  
 #     95% family-wise confidence level

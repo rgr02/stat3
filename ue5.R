@@ -1,7 +1,8 @@
 rm(list = ls())
 
-
 library(nortest)
+library(car)
+
 # Aufgabe 9 ###################################################
 
 
@@ -21,6 +22,8 @@ lillie.test(Morning)
 lillie.test(Midday)
 lillie.test(Evening)
 
+# Testen für Sphericity
+# Varianzen über die Zeit sind homogen
 
 patId <- factor(c(seq(1:5),seq(1:5), seq(1:5)))
 

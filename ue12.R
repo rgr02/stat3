@@ -18,6 +18,9 @@ k <- 0.037
 # Brody Growth Function
 brodyGC <- function(x,A,W,k) (A - (A-W)*exp(-k*(x-min(x))))
 
+# Als Näherung zum Start wäre es möglich zu Logarithmieren
+# und als lineare Funktion das anzunähern.
+
 with(data, plot(x, Weight))
 curve(brodyGC(x,A,W,k),add = T)
 
